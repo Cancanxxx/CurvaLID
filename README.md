@@ -3,27 +3,9 @@ Github Repository for "Geometric Analysis for Adversarial Prompt Classification 
 
 ## Abstract
 
-Adversarial prompts that can jailbreak large language models (LLMs) and lead
-to undesirable behaviours pose a significant challenge to their safe deployment.
-Existing defenses, such as input perturbation and adversarial training, depend on
-activating LLMs’ defense mechanisms or fine-tuning LLMs individually, result-
-ing in inconsistent performance across different prompts and LLMs. To address
-this, we propose CurvaLID, an algorithm that classifies benign and adversarial
-prompts by leveraging two complementary geometric measures: Local Intrinsic
-Dimensionality (LID) and curvature. LID provides a prompt-level analysis of ge-
-ometric differences, while curvature captures the degree of curvature in the mani-
-folds and the semantic shifts at the word level. Together, these tools capture both
-prompt-level and word-level geometric properties, enhancing adversarial prompt
-detection. We demonstrate the limitations of using token-level LID, as applied in
-previous work, for capturing the geometric properties of text prompts. To address
-this, we propose PromptLID to calculate LID in prompt-level representations to
-explore the adversarial local subspace for detection. Additionally, we propose
-TextCurv to further analyze the local geometric structure of prompt manifolds by
-calculating the curvature in text prompts. CurvaLID achieves over 99% classifica-
-tion accuracy, effectively reducing the attack success rate of all studied advanced
-adversarial prompts to zero or nearly zero. Importantly, CurvaLID provides a uni-
-fied detection across different adversarial prompts and LLMs, as its performance
-maintaining consistent performance regardless of the specific LLM targeted.
+Adversarial prompts that can jailbreak large language models (LLMs) and lead to undesirable behaviours pose a significant challenge to the safe deployment of LLMs. Existing defenses, such as input perturbation and adversarial training, depend on activating LLMs' defense mechanisms or fine-tuning LLMs individually, resulting in inconsistent performance across different prompts and LLMs. To address this, we propose CurvaLID, an algorithm that classifies benign and adversarial prompts by leveraging two complementary geometric measures: Local Intrinsic Dimensionality (LID) and curvature. 
+LID provides an analysis of geometric differences at the prompt level, while curvature captures the degree of curvature in the manifolds and the semantic shifts at the word level. Together, these tools capture both prompt-level and word-level geometric properties, enhancing adversarial prompt detection.
+We demonstrate the limitations of using token-level LID, as applied in previous work, for capturing the geometric properties of text prompts. To address this, we propose PromptLID to calculate LID in prompt-level representations to explore the adversarial local subspace for detection. Additionally, we propose TextCurv to further analyze the local geometric structure of prompt manifolds by calculating the curvature in text prompts. CurvaLID achieves over 0.99 detection accuracy, effectively reducing the attack success rate of advanced adversarial prompts to zero or nearly zero. Importantly, CurvaLID provides a unified detection framework across different adversarial prompts and LLMs, as it achieves consistent performance regardless of the specific LLM targeted.
 
 ## Code
 
